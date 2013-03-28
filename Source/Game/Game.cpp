@@ -40,7 +40,9 @@ along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
 #include <GUI.h>
 
+#ifdef WIN32
 #define BOOST_THREAD_USE_LIB
+#endif //WIN32
 
 DECLARE_SINGLETON(Game)
 
