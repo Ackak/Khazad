@@ -51,7 +51,7 @@ bool Game::InitializeGame(uint16_t X, uint16_t Y, const char* SeedString)
 	TempManager = new TemporalManager();
 
     MapGeology = new Geology();
-    MapGeology->InitializeGeology(SeedString);
+    MapGeology->Init(SeedString);
     MapGeology->GenerateWorldHeightMap(X, Y);
 
 	MainMap = new Map();
